@@ -1,4 +1,4 @@
 nemoguardrails
-load-dotenv
+langchain-ollama
 colorama
 nest_asyncio
