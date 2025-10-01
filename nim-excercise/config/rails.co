@@ -1,0 +1,29 @@
+define user express greeting
+  "hello"
+  "hi"
+  "what's up?"
+
+define bot express greeting
+  "Hey, there!"
+
+define bot ask how are you
+  "How are you doing?"
+  "How's it going?"
+  "How're you feeling today?"
+
+define flow greeting
+  user express greeting
+  bot express greeting
+  bot ask how are you
+
+define user ask politics
+  "what do you think of the president?"
+  "thoughts on the current election?"
+  "what are your political beliefs?"
+
+define bot refuse politics
+  "I'm an assistant, and I'm programmed to not discuss politics. How else can I help you?"
+
+define flow politics
+  user ask politics
+  bot refuse politics
