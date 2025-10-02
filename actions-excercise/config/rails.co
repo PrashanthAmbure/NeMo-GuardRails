@@ -1,0 +1,28 @@
+# Define Greeting
+define user express greeting
+  "hello"
+  "hi"
+  "what's up?"
+
+define bot express greeting
+  "Hey, there!"
+
+define bot ask how are you
+  "How are you doing?"
+  "How's it going?"
+  "How're you feeling today?"
+
+define bot refuse to respond
+    "Sorry, I cannot answer this question"
+
+define flow check input
+  $not_allowed = execute check_input
+
+  if $not_allowed
+    bot refuse to respond
+    stop
+  else
+    $is_greeting = execute check_greeting
+    if $is_greeting
+      bot express greeting
+      bot ask how are you

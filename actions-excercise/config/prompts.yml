@@ -1,0 +1,17 @@
+prompts:
+  - task: check_input
+    content: |
+      Your task is to check if the user message is asking about any politician, if it is ensure to block such questions.
+      Don't return anything other YES or NO, not even periods, punctuations.
+      
+      User message: "{{ user_input }}"
+      Question: Should we block the user message (Yes or No)?
+      Answer:
+  - task: check_greeting
+    content: |
+      Your task is to check if the user message is a greeting.
+      Don't return anything other YES or NO, not even periods, punctuations.
+
+      User message: "{{ user_input }}"
+      Question: Is user message a greeting (Yes or No)?
+      Answer:

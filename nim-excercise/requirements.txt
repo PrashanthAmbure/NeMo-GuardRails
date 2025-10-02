@@ -2,3 +2,4 @@ nemoguardrails
 load-dotenv
 colorama
 nest_asyncio
+langchain-nvidia-ai-endpoints

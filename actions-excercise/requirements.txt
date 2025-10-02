@@ -1,0 +1,4 @@
+nemoguardrails
+langchain-ollama
+colorama
+nest_asyncio
